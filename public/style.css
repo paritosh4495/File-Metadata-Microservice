@@ -1,0 +1,119 @@
+/****** Main Styling ******/
+
+html,
+body {
+  display: block;
+  min-height: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #e0fff9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #4e8185;
+  background-image: linear-gradient(#004042d1, #fbfbfb);
+  background-image: -ms-linear-gradient(top, #004042d1 0%, #fbfbfb 100%);
+  background-image: -moz-linear-gradient(top, #004042d1 0%, #fbfbfb 100%);
+  background-image: -o-linear-gradient(top, #004042d1 0%, #fbfbfb 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #004042d1),
+    color-stop(1, #fbfbfb)
+  );
+  background-image: -webkit-linear-gradient(top, #004042d1 0%, #fbfbfb 100%);
+  background-image: linear-gradient(to bottom, #004042d1 0%, #fbfbfb 100%);
+}
+
+.container {
+  padding: 0;
+  margin-top: 40px;
+}
+
+ol {
+  list-style-position: inside;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #2574a9;
+}
+
+input {
+  display: block;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.view {
+  position: relative;
+  margin: auto;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 0.5px;
+  background: white;
+  margin-top: 40px;
+  box-shadow: 0px 4px 20px 0px #008699;
+  padding: 60px 0;
+  width: 40%;
+  max-width: 1000px;
+  min-width: 400px;
+  min-height: 160px;
+}
+.view.onDrag {
+  box-shadow: 0px 4px 20px 0px #008431;
+  transition: all 200ms;
+}
+.view.onDrag .hide-on-drag {
+  display: none;
+}
+.view.onDrag .display-on-drag {
+  display: block;
+  left: 0;
+}
+.display-on-drag {
+  display: none;
+  position: relative;
+  font-size: 100px;
+  color: #79c5b1;
+  transition: all 330ms;
+}
+.d2 {
+  position: absolute;
+  left: 49%;
+  top: 20%;
+}
+.view.onDrag .display-on-drag {
+  display: block;
+}
+
+.upload-input,
+.upload-submit {
+  display: none;
+}
+.upload-trigger {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.btn {
+  width: 170px;
+  padding: 10px 20px;
+  background-color: #459099;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0px 1px 4px gray;
+}
+.btn:hover {
+  box-shadow: 0px 4px 10px gray;
+}
